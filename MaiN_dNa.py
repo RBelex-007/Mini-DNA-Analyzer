@@ -1,7 +1,6 @@
 from DNA_Toolkit import *
 import random
 
-
 #Creating a random DNA sequence
 randDNAstr = ''.join([random.choice(Nucleotides)
                       for nuc in range(50)])
@@ -10,17 +9,17 @@ rndDNAdstr = "actcgatgca"
 DNAstr = validateSeq(randDNAstr)
 print(CountNUCfreq(DNAstr))
 
-print("[1]. " + DNAstr)
+print("[1]. " + coloured(DNAstr))
 
-print("[2]. " + transcription(DNAstr))
+print("[2]. " + colored(transcription(DNAstr)))
 
-print(f"[3]  + DNA String +Reverse Complement:\n5'  {DNAstr}  3'\n")
+print(f"[3]  + DNA String +Reverse Complement:\n5'  {colored(DNAstr)}  3'\n")
 
 print(f"    {''.join(['|' for c in range(len(DNAstr))])}")
 
-print(f"3'  {Complement(DNAstr)}  5'\n")
+print(f"3'  {colored(Complement(DNAstr))}  5'\n")
 
-print(f"[4] Reverse complement: 5'  {Reverse_Complement(DNAstr)}  3'\n")
+print(f"[4] Reverse complement: 5'  {colored(Reverse_Complement(DNAstr))}  3'\n")
 
 print(f"[5] GC Content:  {GC_content(DNAstr)}%\n")
 
