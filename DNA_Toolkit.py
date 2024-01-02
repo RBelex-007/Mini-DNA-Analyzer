@@ -1,4 +1,5 @@
 from collections import Counter
+from Utilities import colored
 Nucleotides = ["A", "C", "G", "T"]
 DNA_ReverseCompl = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
 DNA_Codons = {
